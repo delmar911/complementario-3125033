@@ -1,0 +1,26 @@
+﻿"Año";"Periodo";"Facturación (millones de euros)"
+"2013";"Año";"314"
+"2014";"Año";"413"
+"2015";"Año";"511"
+"2016";"Año";"617"
+"2017";"Año";"713"
+"2018";"Año";"813"
+"2019";"Año";"920"
+"2020";"Año";"1.104"
+"2021";"Año";"1.303"
+"2022";"Año";"1.511"
+"2023";"Año";"1.723"
+;;
+;;
+"Métrica":"Facturación (millones de euros)"
+"Fuente":"DEV"
+"Clasificación":""
+"Unidad":"En millones de euros"
+"Escala":"Millones"
+"EscalaFactorPotencia10":"6"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/sector-espanol-videojuego-facturo-713-millones-2017-156-mas/ba2edfe1-58b5-4a2a-9d88-b02dab006cc2"
+"Titulo":"Evolución de la facturación del sector español del desarrollo de videojuegos"
+"Subtitulo":"Los datos de 2020 hacia adelante son previsiones de la asociación española de desarrolladores de videojuegos (DEV)"

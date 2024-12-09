@@ -1,0 +1,19 @@
+﻿"Año";"Periodo";"Parámetro";"IA(%)"
+"2024";"Trimestre 1";"Construcción";"4,5"
+"2024";"Trimestre 1";"Industria";"10,1"
+"2024";"Trimestre 1";"Servicios";"15,6"
+"2024";"Trimestre 1";"Total";"12,4"
+;;
+;;
+"Métrica":"IA(%)"
+"Fuente":"INE"
+"Clasificación":""
+"Unidad":"%"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/porcentaje-empresas-emplean-tecnologias-inteligencia-artificial-ia-espana/15deff07-f15b-45c1-9a7f-7bf8ee4ceb73"
+"Titulo":"Porcentaje de empresas que emplean tecnologías de Inteligencia Artificial (IA) en España"
+"Subtitulo":"Nuevas tecnologías por sectores de actividad"
