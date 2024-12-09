@@ -1,0 +1,26 @@
+﻿"Año";"Periodo";"Nº de empleados en el sector"
+"2013";"Año";"2.360"
+"2014";"Año";"3.376"
+"2015";"Año";"4.460"
+"2016";"Año";"5.440"
+"2017";"Año";"6.337"
+"2018";"Año";"6.900"
+"2019";"Año";"7.320"
+"2020";"Año";"7.686"
+"2021";"Año";"7.993"
+"2022";"Año";"8.233"
+"2023";"Año";"8.480"
+;;
+;;
+"Métrica":"Nº de empleados en el sector"
+"Fuente":"DEV"
+"Clasificación":""
+"Unidad":"Nº de personas empleadas"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/industria-espanola-videojuego-alcanzo-6337-puestos-empleos-2017-165-mas/37aede1d-4563-4d13-a7f0-cdf8109836ed"
+"Titulo":"Evolución del empleo en la industria española del videojuego"
+"Subtitulo":""
