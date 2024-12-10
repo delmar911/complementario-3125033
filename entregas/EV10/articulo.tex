@@ -1,0 +1,181 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\title{Arquitectura de Software y Patrones de Diseño: Un Proceso de Análisis y Documentación}
+\author{María del Mar Artunduaga Artunduaga\\Aprendiz}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    Instructor: Jesús Ariel Gonzales Bonilla
+\end{center}
+
+\begin{center}{Complementaria de Investigación}
+Elaboración de artículos científicos
+    Servicio Nacional de Aprendizaje (SENA) \\
+    
+\end{center}\\
+\begin{abstract}
+Este artículo documenta un proceso exhaustivo de análisis, organización y creación de contenido técnico enfocado en la arquitectura de software y los patrones de diseño. Durante dos semanas, se desarrollaron 34 artículos que exploraron temas clave como la estructura fundamental de los sistemas, la implementación de patrones de diseño y su impacto en la calidad del software. El objetivo principal fue construir un repositorio de conocimiento que pudiera servir como referencia para proyectos futuros y como recurso educativo para profesionales y estudiantes del área. La metodología empleada estuvo basada en enfoques ágiles, específicamente Scrum y XP, que facilitaron una gestión eficiente del tiempo y los recursos. Además, se utilizaron herramientas como Google Scholar para la planificación, combinando trabajo físico y digital. Entre los resultados más destacados se encuentran análisis profundos de patrones como Singleton, Observer y Factory, así como gráficos y tablas que muestran la distribución de los temas tratados. También se realizaron comparaciones con estudios previos y se discutieron las limitaciones encontradas durante el proyecto. En conclusión, este trabajo demuestra cómo una planificación estratégica y el uso de metodologías ágiles pueden mejorar significativamente la documentación técnica y el aprendizaje de temas complejos en ingeniería de software.
+
+\textbf{Palabras clave}: Arquitectura de Software, Patrones de Diseño, Documentación Técnica, Scrum, Metodologías Ágiles, Diseño de Software, XP.
+\end{abstract}
+
+\tableofcontents
+
+\section{Abstract}
+This article documents a comprehensive process of analysis, organization, and creation of technical content focused on software architecture and design patterns. Over two weeks, 34 articles were developed, exploring key topics such as the fundamental structure of systems, the implementation of design patterns, and their impact on software quality. The primary goal was to build a knowledge repository that could serve as a reference for future projects and an educational resource for professionals and students in the field. The methodology employed was based on agile approaches, specifically Scrum and XP, which facilitated efficient management of time and resources. Tools like Google Scholar were used for planning, combining both physical and digital work. Among the most notable outcomes are in-depth analyses of patterns such as Singleton, Observer, and Factory, as well as graphs and tables showcasing the distribution of the topics covered. Comparisons with previous studies were also conducted, and the limitations encountered during the project were discussed. In conclusion, this work demonstrates how strategic planning and the use of agile methodologies can significantly enhance technical documentation and the learning of complex topics in software engineering.
+\textbf{Keywords}: Software Architecture, Design Patterns, Technical Documentation, Scrum, Agile Methodologies, Software Design, XP.
+
+
+
+\section{Introducción}
+
+\subsection{Planteamiento del problema}
+En el desarrollo de software moderno, la comprensión y aplicación de conceptos avanzados como la arquitectura de software y los patrones de diseño son cruciales para garantizar la calidad, la escalabilidad y la mantenibilidad de los sistemas. Sin embargo, la falta de documentación accesible y bien estructurada sobre estos temas dificulta su enseñanza y aprendizaje, especialmente para aquellos que se inician en el campo.
+
+\subsection{Objetivos}
+Este proyecto tuvo como objetivo principal documentar de manera sistemática y comprensible los conceptos y patrones más relevantes en arquitectura de software, creando una base teórica y práctica que facilite su aplicación en proyectos reales.
+
+\subsection{Justificación}
+La importancia de este trabajo radica en la necesidad de contar con material técnico que sirva como guía para estudiantes y profesionales. Además, la adopción de metodologías ágiles permitió optimizar el tiempo y la calidad de la documentación, asegurando un resultado útil y aplicable a diferentes contextos.
+
+\section{Marco Teórico}
+
+\subsection{Introducción a la Arquitectura de Software}
+La arquitectura de software es una disciplina fundamental en la ingeniería de software que se ocupa de la estructuración de sistemas complejos. Según Bass, Clements y Kazman (2012), la arquitectura define la estructura fundamental de un sistema, comprendiendo sus componentes, las relaciones entre ellos y los principios que guían su diseño. Su propósito es proporcionar una base sólida que permita el desarrollo de sistemas robustos, escalables y mantenibles.
+
+La importancia de la arquitectura radica en su capacidad para influir en la calidad general del software. Un diseño arquitectónico sólido no solo facilita la implementación, sino que también reduce el costo y el tiempo asociados a futuras modificaciones. Los principios de diseño arquitectónico, como la separación de responsabilidades, la modularidad y la reutilización de componentes, son esenciales para garantizar que el software cumpla con los requisitos funcionales y no funcionales.
+
+Entre los estilos arquitectónicos más relevantes se encuentran:
+\begin{itemize}
+    \item \textbf{Arquitectura en Capas:} Es uno de los enfoques más comunes y consiste en dividir el sistema en niveles jerárquicos, como presentación, lógica de negocio y acceso a datos. Este modelo mejora la modularidad y facilita el mantenimiento.
+    \item \textbf{Microservicios:} Este estilo ha ganado popularidad en los últimos años debido a su enfoque en la creación de servicios pequeños, independientes y desplegables de forma separada. Permite una alta escalabilidad y flexibilidad en el desarrollo de aplicaciones modernas.
+    \item \textbf{Modelo-Vista-Controlador (MVC):} Este patrón arquitectónico separa las preocupaciones del modelo de datos, la lógica de negocio y la interfaz de usuario, lo que es especialmente útil en el desarrollo de aplicaciones web.
+    \item \textbf{Arquitectura Basada en Eventos:} Es ideal para sistemas que requieren alta disponibilidad y procesamiento en tiempo real. Este enfoque utiliza eventos como el principal mecanismo para comunicar y coordinar componentes.
+\end{itemize}
+
+\subsection{Introducción a los Patrones de Diseño}
+Los patrones de diseño son soluciones probadas y documentadas para problemas recurrentes en el desarrollo de software. Gamma et al. (1994), en su libro seminal \textit{Design Patterns: Elements of Reusable Object-Oriented Software}, clasificaron los patrones en tres categorías principales: creacionales, estructurales y de comportamiento.
+
+\subsubsection{Patrones Creacionales}
+Estos patrones se centran en la forma en que se crean los objetos, promoviendo la reutilización de código y la flexibilidad. Algunos de los más destacados incluyen:
+\begin{itemize}
+    \item \textbf{Singleton:} Garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella. Es comúnmente utilizado en la gestión de recursos compartidos como conexiones de bases de datos o registros de configuración.
+    \item \textbf{Factory Method:} Permite crear objetos sin especificar la clase exacta del objeto que se va a crear, delegando esta responsabilidad a subclases.
+    \item \textbf{Builder:} Se emplea para construir objetos complejos paso a paso, proporcionando una mayor claridad en el proceso de creación.
+\end{itemize}
+
+\subsubsection{Patrones Estructurales}
+Estos patrones se enfocan en la composición de clases y objetos para formar estructuras más grandes y flexibles. Ejemplos incluyen:
+\begin{itemize}
+    \item \textbf{Adapter:} Actúa como un puente entre dos interfaces incompatibles, permitiendo que trabajen juntas.
+    \item \textbf{Composite:} Facilita el tratamiento uniforme de objetos individuales y composiciones de objetos. Es útil para representar jerarquías como árboles.
+    \item \textbf{Decorator:} Añade funcionalidad a un objeto dinámicamente, sin alterar su estructura.
+\end{itemize}
+
+\subsubsection{Patrones de Comportamiento}
+Estos patrones abordan la interacción entre objetos y la asignación de responsabilidades. Entre los más utilizados están:
+\begin{itemize}
+    \item \textbf{Observer:} Define una relación de dependencia uno a muchos entre objetos, de manera que cuando un objeto cambia de estado, todos sus dependientes son notificados automáticamente.
+    \item \textbf{Strategy:} Permite definir una familia de algoritmos, encapsularlos y hacerlos intercambiables durante la ejecución del programa.
+    \item \textbf{Command:} Encapsula una solicitud como un objeto, permitiendo que se parametrice con diferentes solicitudes, se guarde el historial o se deshaga.
+\end{itemize}
+
+\subsection{Beneficios y Aplicaciones de los Patrones de Diseño}
+Los patrones de diseño proporcionan numerosos beneficios, entre los que destacan:
+\begin{itemize}
+    \item \textbf{Reutilización de Código:} Facilitan el uso de soluciones existentes en diferentes contextos, lo que ahorra tiempo y esfuerzo.
+    \item \textbf{Mejora de la Mantenibilidad:} Al emplear patrones estándar, los desarrolladores pueden comprender y modificar el código de manera más eficiente.
+    \item \textbf{Escalabilidad:} Los patrones estructurales, en particular, permiten construir sistemas que puedan crecer sin incurrir en complejidades adicionales.
+    \item \textbf{Flexibilidad:} La separación de responsabilidades y la modularidad inherente a muchos patrones promueven la adaptabilidad.
+\end{itemize}
+
+En el ámbito industrial, los patrones de diseño son ampliamente utilizados en frameworks como Spring, que implementa \textit{Factory} y \textit{Singleton} en la gestión de \textit{beans}, o Django, que sigue el patrón \textit{MVC} para el desarrollo de aplicaciones web.
+
+\subsection{Estudios Previos}
+La literatura sobre arquitectura de software y patrones de diseño es vasta y rica en contribuciones. Algunos estudios clave incluyen:
+\begin{itemize}
+    \item \textbf{Bass, Clements y Kazman (2012):} Este trabajo seminal aborda los principios fundamentales de la arquitectura de software, destacando su impacto en la calidad del sistema y la satisfacción del cliente.
+    \item \textbf{Gamma et al. (1994):} Introdujeron los 23 patrones de diseño más utilizados, que se han convertido en un estándar en la industria.
+    \item \textbf{García et al. (2020):} Examinaron cómo las metodologías ágiles, como \textit{Scrum}, facilitan la enseñanza y la comprensión de los patrones de diseño en entornos educativos y empresariales.
+\end{itemize}
+
+Estudios recientes han explorado cómo los patrones de diseño pueden ser aplicados en tecnologías emergentes, como la inteligencia artificial y la computación en la nube.
+
+\subsection{Metodologías Ágiles y su Relación con el Diseño de Software}
+Las metodologías ágiles, como \textit{Scrum} y \textit{Extreme Programming (XP)}, han transformado la forma en que se desarrollan proyectos de software. Estas metodologías enfatizan la iteración rápida, la colaboración y la flexibilidad para adaptarse a los cambios.
+
+En el contexto de este proyecto, se utilizaron las siguientes prácticas ágiles:
+\begin{itemize}
+    \item \textbf{Sprints:} Dividir el trabajo en iteraciones cortas permitió completar los 34 artículos de manera eficiente.
+    \item \textbf{Reuniones diarias:} Facilitaron la comunicación y la resolución de problemas en tiempo real.
+    \item \textbf{Feedback continuo:} Se emplearon revisiones frecuentes para mejorar la calidad de los artículos y ajustar el enfoque según las necesidades.
+\end{itemize}
+
+\subsection{Herramientas y Enfoques Visuales}
+El uso de herramientas como \textit{Google Scholar} y \textit{Canva} para la planificación visual y la creación de diagramas jugó un papel crucial en la organización del proyecto. Además, el análisis de datos y la generación de gráficos permitieron visualizar los resultados de manera clara y efectiva, reforzando la comprensión de los conceptos tratados.
+
+
+\section{Metodología}
+El enfoque metodológico del proyecto se basó en la implementación de prácticas ágiles, adaptadas para la creación de contenido técnico.
+
+\subsection{Planificación Inicial}
+Se estableció un cronograma de trabajo dividido en dos semanas, utilizando sprints de corta duración para garantizar la entrega periódica de artículos. Cada sprint incluyó: 
+\begin{itemize}
+    \item La investigación de conceptos clave.
+    \item La redacción y revisión de los artículos.
+    \item La inclusión de gráficos y diagramas para complementar la información.
+\end{itemize}
+
+\subsection{Herramientas Utilizadas}
+\begin{itemize}
+    \item \textbf{Canva:} Para la creación de gráficos y la planificación visual del proyecto.
+    \item \textbf{Microsoft Word y Google Docs:} Para la redacción y edición colaborativa de los artículos.
+    \item \textbf{Repositorios Digitales y Google Scholar:} Para almacenar y organizar las fuentes de información.
+\end{itemize}
+
+\subsection{Trabajo Híbrido}
+El proyecto se desarrolló de manera híbrida, combinando investigación en recursos físicos (libros, apuntes) con herramientas digitales. Esto permitió aprovechar las ventajas de ambos enfoques, maximizando la productividad y la precisión en la recopilación de datos.
+
+
+\section{Resultados}
+\subsection{Artículos Elaborados}
+Se completaron 34 artículos abarcando:
+\begin{itemize}
+    \item Patrones de diseño creacionales
+    \item Patrones estructurales
+    \item Patrones de comportamiento
+    \item Estilos arquitectónicos
+\end{itemize}
+
+\section{Discusión}
+
+Los resultados obtenidos se compararon con estudios previos, confirmando la relevancia de los patrones de diseño en la industria actual. Sin embargo, se identificaron ciertas limitaciones:
+\begin{itemize}
+    \item \textbf{Tiempo Insuficiente:} Algunas categorías de patrones no pudieron ser abordadas en profundidad debido al tiempo limitado del proyecto.
+    \item \textbf{Acceso a Recursos:} Aunque se utilizaron herramientas digitales, el acceso a ciertos libros y publicaciones especializadas fue restringido.
+\end{itemize}
+
+A pesar de estas limitaciones, el proyecto cumplió con su objetivo principal, proporcionando un recurso valioso para la comunidad técnica.
+
+\section{Conclusiones}
+La creación de documentación técnica basada en metodologías ágiles resultó ser altamente efectiva, facilitando la sistematización de información compleja.
+Los patrones de diseño siguen siendo herramientas esenciales para el desarrollo de software, y su comprensión es clave para enfrentar los desafíos modernos. Futuros proyectos podrían expandir este trabajo, abordando patrones avanzados o explorando aplicaciones en nuevas tecnologías como la inteligencia artificial.
+
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+\cite{astudillo2014arquitectura, castro2023atencion, cechich2001especificacion, control_chaos2024, cortez2012perfiles, daza2013desarrollo, fernandez2006arquitectura, gil2006uml, navarro2017integracion, navarro2024mejores ,romero2005arquitectura} 
+
+
+
+\end{document}
