@@ -1,35 +1,70 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper, twocolumn]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{titling}
+\usepackage{tocloft} % Para mejorar la tabla de contenidos
 
-\title{Arquitectura de Software y Patrones de Diseño: Un Proceso de Análisis y Documentación}
-\author{María del Mar Artunduaga Artunduaga\\Aprendiz}
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
 
+% Estilo de la tabla de contenidos
+\renewcommand{\cfttoctitlefont}{\Large\bfseries} % Título de la tabla
+\renewcommand{\cftsecfont}{\bfseries} % Secciones en negrita
+\renewcommand{\cftsecpagefont}{\bfseries} % Páginas en negrita
+
+% Configuración de portada
+\title{\Huge\textbf {Arquitectura de Software y Patrones de Diseño: Un Proceso de Análisis y  para el Proyecto “TuVooz”}
+\author{
+    \textbf{Maria del Mar Artunduaga Artunduaga}
+}
+\date{}
 
 \begin{document}
 
-\maketitle
-
-\begin{center}
-    Instructor: Jesús Ariel Gonzales Bonilla
-\end{center}
-
-\begin{center}{Complementaria de Investigación}
-Elaboración de artículos científicos
-    Servicio Nacional de Aprendizaje (SENA) \\
+% Portada
+\begin{titlingpage}
+    \centering
     
-\end{center}\\
+    {\Huge\textbf{Arquitectura de Software y Patrones de Diseño: Un Proceso de Análisis y  Documentación}}
+    \vspace{1.5cm}
+    
+    
+    
+    \begin{tabular}{c}
+        \textbf{\large Maria del Mar Artunduaga Artunduaga}
+    \end{tabular}
+    \vspace{2cm}
+    
+    \textbf{\large Ficha: 3125033}
+    \vspace{2cm}
+    
+    \textbf{\large Instructor: Jesús Ariel Gonzales Bonilla}
+    \vspace{2cm}
+    \textbf{\large Complementaria de Investigación\\Elaboración de artículos científicos}
+    \vspace{2cm}
+    
+    \textbf{\large Servicio Nacional de Aprendizaje (SENA)} \\
+    \textbf{\large 2024}\\
+     \centering
+    \vspace*{3cm}
+     \includegraphics[width=2cm]{logoSena.png} 
+    
+\end{titlingpage}
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
 \begin{abstract}
 Este artículo documenta un proceso exhaustivo de análisis, organización y creación de contenido técnico enfocado en la arquitectura de software y los patrones de diseño. Durante dos semanas, se desarrollaron 34 artículos que exploraron temas clave como la estructura fundamental de los sistemas, la implementación de patrones de diseño y su impacto en la calidad del software. El objetivo principal fue construir un repositorio de conocimiento que pudiera servir como referencia para proyectos futuros y como recurso educativo para profesionales y estudiantes del área. La metodología empleada estuvo basada en enfoques ágiles, específicamente Scrum y XP, que facilitaron una gestión eficiente del tiempo y los recursos. Además, se utilizaron herramientas como Google Scholar para la planificación, combinando trabajo físico y digital. Entre los resultados más destacados se encuentran análisis profundos de patrones como Singleton, Observer y Factory, así como gráficos y tablas que muestran la distribución de los temas tratados. También se realizaron comparaciones con estudios previos y se discutieron las limitaciones encontradas durante el proyecto. En conclusión, este trabajo demuestra cómo una planificación estratégica y el uso de metodologías ágiles pueden mejorar significativamente la documentación técnica y el aprendizaje de temas complejos en ingeniería de software.
 
 \textbf{Palabras clave}: Arquitectura de Software, Patrones de Diseño, Documentación Técnica, Scrum, Metodologías Ágiles, Diseño de Software, XP.
 \end{abstract}
 
-\tableofcontents
+
 
 \section{Abstract}
 This article documents a comprehensive process of analysis, organization, and creation of technical content focused on software architecture and design patterns. Over two weeks, 34 articles were developed, exploring key topics such as the fundamental structure of systems, the implementation of design patterns, and their impact on software quality. The primary goal was to build a knowledge repository that could serve as a reference for future projects and an educational resource for professionals and students in the field. The methodology employed was based on agile approaches, specifically Scrum and XP, which facilitated efficient management of time and resources. Tools like Google Scholar were used for planning, combining both physical and digital work. Among the most notable outcomes are in-depth analyses of patterns such as Singleton, Observer, and Factory, as well as graphs and tables showcasing the distribution of the topics covered. Comparisons with previous studies were also conducted, and the limitations encountered during the project were discussed. In conclusion, this work demonstrates how strategic planning and the use of agile methodologies can significantly enhance technical documentation and the learning of complex topics in software engineering.
